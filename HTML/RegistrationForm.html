@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<style type="text/css">
+		.wrapper{
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.formContainer{
+			width: 35%;
+			height: 20%;
+			background-color: #fafafa;
+			border: 1px solid #000;
+			border-radius: 8px;
+			padding: 15px;
+		}
+		body{
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			position: absolute;
+		}
+		form{
+			position: relative;
+			width: 100%;
+			heigth: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		form .col{
+			height: 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-bottom: 10px;
+		}
+
+		.col input{
+			
+			width: 70%;
+		}
+		.col label{
+			line-height: 30px;
+			width: 100px;
+			text-align: right;
+			font-weight: 600;
+		}
+
+		form button{
+			width: 30%;
+			height: 30px;
+			margin-left: 35%;
+			background-color: green;
+			border: 1px solid black;
+			border-radius: 5px;
+			transition: 300ms linear;
+		}
+
+		form button:hover{
+			background-color: darkgreen;
+			transition: 300ms linear;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="formContainer">
+			<form>
+				<div class="col">
+					<label for="name">Name</label>
+					<input type="text" name="name"/>
+				</div>
+				
+				<div class="col">
+					<label for="surname">Surname</label>
+					<input type="text" name="surname"/>
+				</div>
+				
+				<div class="col">
+					<label for="email">Email</label>
+					<input type="email" name="email"/>
+				</div>
+				
+				<div class="col">
+					<label for="password">Password</label>
+					<input type="password" name="password"/>
+				</div>
+				
+
+				<button type="submit">Register</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
